@@ -10,7 +10,7 @@ import os
 bot = telebot.TeleBot('8115452482:AAFGZj0stnWFbP0-dlAbWKZqSmvSyNAeWm0')
 
 # Admin user IDs
-admin_id = ["1367201926"]
+admin_id = ["6079943111"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -285,8 +285,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @Manish8x
-Official Channel :- t.me/manishsingh1000
+Buy From :- @Itzz_AloneX
+Official Channel :- https://t.me/+ymUhqQdlRiVjOTQ1
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -303,7 +303,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
-✅Join :- t.me/manishsingh1000'''
+✅Join :- https://t.me/+ymUhqQdlRiVjOTQ1'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
